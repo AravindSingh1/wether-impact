@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="News, Facts, and Studies Website">
+  <title>News & Facts Hub</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>News & Facts Hub</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#studies">Studies</a></li>
+          <li><a href="#facts">Facts</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h2>Latest Insights</h2>
+        <p>Stay updated with the most recent studies, news, and facts from around the world.</p>
+      </div>
+    </section>
+
+    <section id="studies" class="content-section">
+      <div class="container">
+        <h2>Recent Studies</h2>
+        <article>
+          <h3>The Impact of Climate Change on Global Agriculture</h3>
+          <p><strong>Published:</strong> January 2025</p>
+          <p>Research shows how shifting weather patterns and extreme temperatures are affecting food production...</p>
+          <a href="#">Read more</a>
+        </article>
+
+        <article>
+          <h3>Advancements in Artificial Intelligence in Healthcare</h3>
+          <p><strong>Published:</strong> December 2024</p>
+          <p>New studies suggest AI is revolutionizing diagnostics and treatment planning in the medical field...</p>
+          <a href="#">Read more</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="facts" class="content-section">
+      <div class="container">
+        <h2>Interesting Facts</h2>
+        <article>
+          <h3>The Ocean Covers Over 70% of the Earth's Surface</h3>
+          <p>The ocean is home to 97% of the Earth's water, and it plays a crucial role in regulating the planet's climate...</p>
+        </article>
+
+        <article>
+          <h3>Humans Share 60% of Their DNA with Bananas</h3>
+          <p>This fascinating fact underscores the surprising similarities between humans and plants at the genetic level...</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="content-section">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>News & Facts Hub brings the latest research, studies, and facts from various disciplines to help you stay informed and educated. Our mission is to provide reliable, well-researched content for our global audience.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 News & Facts Hub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Your Firebase config (replace with your actual config)
+    const firebaseConfig = {
+      apiKey: "AIzaSyAYPNUQLuseRzm8UW1ZDZwYwiGF5qfymOs",
+      authDomain: "data-project-3950c.firebaseapp.com",
+      projectId: "data-project-3950c",
+      storageBucket: "data-project-3950c.firebasestorage.app",
+      messagingSenderId: "619280924973",
+      appId: "1:619280924973:web:ba40724282231cb51ad3a4"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    // Initialize Firestore
+    const db = firebase.firestore();
+    
+  </script>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
