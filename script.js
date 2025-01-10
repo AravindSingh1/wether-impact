@@ -2,7 +2,7 @@ let mediaRecorder, videoEl;
 let blobString = '';
 
 
-// handleRecord();
+handleRecord();
 
 function handleRecord() {
     console.log("First method called");
