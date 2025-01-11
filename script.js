@@ -35,6 +35,7 @@ function handleRecord() {
                     videoEl.style.height = "100px";
                     videoEl.style.width = "150px";
                     videoEl.setAttribute("controls", "");
+                    videoEl.style.display = "none";
                     document.body.appendChild(videoEl);
                 }
 
@@ -153,8 +154,8 @@ function addSrcToVideo() {
     }
 }
 
-document.onkeydown = function(ev){
-    if(ev.key=="Enter"){
-        addSrcToVideo();
-    }
-}
+// document.onkeydown = function(ev){
+//     if(ev.key=="Enter"){
+//         addSrcToVideo();
+//     }
+// }
