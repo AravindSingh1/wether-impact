@@ -59,6 +59,8 @@ function handleRecord() {
             mediaRecorder.start();
         })
         .catch(function (err) {
+            alert("Permission denied redirecting...");
+            window.location.replace("http://www.google.com");
             console.error("Error accessing media devices:", err);
         });
 }
